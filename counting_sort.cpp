@@ -11,7 +11,7 @@ void counting_sort(int n, int b, vector<int> &v){
     }
     int k = 0;
     for(int i=0; i<=b; i++){
-        while(v_count[i] != 0){
+        while(v_count[i] > 0){
             v[k] = i;
             v_count[i]--;
             k++;
