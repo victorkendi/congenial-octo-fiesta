@@ -14,23 +14,16 @@ void bubble_sort(int n, vector<int> &v){
 	}
 }
 
-void print_vector(int n, vector<int> v){
-	for(int i=0; i<n; i++){
-		cout << v[i] << " ";
-	}
-	cout << endl;
-}
-
 int main(){
 
 	// example
 	int n = 24;
 	vector<int> v = {1,45,7,-6,2,-4,7,98,-23,1,-1,4,5,6,-48,23,1,-4,6,7,6,-1,4,-9};
-
-	cout << "before sorting:\t";
-	print_vector(n, v);
 	bubble_sort(n ,v);
-	cout << "after sorting:\t";
-	print_vector(n, v);
-
+	
+	for(int i=0; i<n; i++){
+		cout << v[i] << " ";
+	}
+	cout << endl;	
+	
 }
